@@ -9,8 +9,9 @@ namespace NameReverse
         {
             while (true)
             {
+                Console.ForegroundColor = ConsoleColor.Gray;
                 Console.WriteLine("Please enter your name to see its reverse.");
-
+                Console.ResetColor();
 
                 string name = Console.ReadLine().ToUpper();
                 char[] nameArray = name.ToCharArray();
